@@ -1,0 +1,17 @@
+
+services:
+  anchor:
+    build: .
+    volumes:
+      - .:/app
+      - /C/Users/krtzx/.config/solana/id.json:/root/.config/solana/id.json
+    command: /bin/bash
+
+# solana-validator:
+#   image: solanalabs/solana:latest
+#   command: solana-test-validator
+#   ports:
+#     - "8899:8899"
+
+# depends_on:
+#     - solana-validator

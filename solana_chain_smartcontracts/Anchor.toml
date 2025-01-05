@@ -1,0 +1,27 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+solana_chain_smartcontracts = "49WRZcDBqSiLMzVzuQRNGsvTsbfhg59m6deu2ndZ1RG3"
+hello_smartcontracts = "EnZd9fh47gDDzCyCs2r8BQWbgm1cBQRc6briPFQG1SM7"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+#wallet = "C:\\Users\\krtzx\\.config\\solana\\id1.json"
+wallet = "~/.config/solana/id.json"
+#wallet = "C:/Users/krtzx/.config/solana/id2.json" 
+#wallet = "C:\\Users\\krtzx\\.config\\solana\\id.json"
+#"~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 10000
+
