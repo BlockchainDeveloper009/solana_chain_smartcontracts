@@ -97,3 +97,17 @@ The error message you're seeing indicates that Docker Compose is unable to find 
 - If you still encounter issues, verify that Docker Desktop is running and that you have access to the necessary Docker images.
 
 By following these steps, you should be able to successfully initialize your Anchor project within Docker. If you have any further issues, feel free to ask!
+
+
+
+
+Solana-keygen for programs declareID
+
+```
+solana-keygen new --outfile ./target/deploy/<program-name>-keypair.json
+```
+### Docker Commands
+
+```
+docker-compose run anchor solana-test-validator
+```
